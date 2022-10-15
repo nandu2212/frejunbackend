@@ -3,6 +3,8 @@ var mysql=require('mysql');
 const multer=require('multer')
 const database=require('./dbconnection')
 const postdetails=require("./controllers/postdetails");
+const updated=require("./controllers/findingletterewitha");
+const changeddata=require("./controllers/modification");
 //set multer storage
 const storage=multer.diskStorage({
     destination:(req,file,cb)=>{
@@ -55,4 +57,6 @@ app.post('/create',(req,res)=>{
 })
 
 //middleware
-app.use("/",postdetails)
+app.use("/",postdetails);
+app.use("/post",updated);
+app.use("/change",changeddata)
