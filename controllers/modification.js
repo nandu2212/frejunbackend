@@ -4,7 +4,7 @@ const app=express();
 const basedb=require("../dbconnection")
 
 //utilitie requirement
-const datawrite=require("../utilities/updationdata");
+const datawrite=require("../utilitys/updatingdb");
 
 app.post("/update",(req,res)=>{
 basedb.connect(function(err){
