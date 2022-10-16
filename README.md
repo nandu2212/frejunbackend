@@ -12,3 +12,5 @@ modification -->updating the db with help of id
 
 pagination --> pagination on limit -5 page=1 default
 --> if we want to change using query paramas we can
+images folder 
+images of snaps of postman sql data
