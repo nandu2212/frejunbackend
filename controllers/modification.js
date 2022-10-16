@@ -14,11 +14,9 @@ basedb.connect(function(err){
 if(err) throw err
 var array=await result[0].DATA.split(" ");
 var modifieddata=await datawrite(array);
-var z=`UPDATE frejun2 SET DATA="${modifieddata}" WHERE ?`
-var value={
-    ID:req.body.id
-}
-basedb.query(z,value,(err,ddata)=>{
+var z=`UPDATE frejun2 SET DATA="${modifieddata}" WHERE ID=?`
+
+basedb.query(z,[req.body.id],(err,ddata)=>{
 if(err) throw err;
 res.status(200).send(ddata)
 })
