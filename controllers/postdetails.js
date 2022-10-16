@@ -3,6 +3,7 @@ const express=require("express");
 const app=express();
 //pagination
 const pagination=require('../utilitys/pagination')
+
 app.get("/details",(req,res)=>{
 connection.connect(function(err){
     if(err) throw err;
@@ -14,7 +15,7 @@ connection.query(sql,async(err,result)=>{
     if (!limit) limit = 5
    
     const product =await pagination(result, page, limit)
-    res.status(200).json(result)
+    res.status(200).json(product)
 })
 })
 })
