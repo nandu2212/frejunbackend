@@ -9,3 +9,6 @@ findingletterwitha--> writes the all words stat with a or A
 modification -->updating the db with help of id
             --> functions info  used by utility(updatingdb);
             --> route info (change/update)
+
+pagination --> pagination on limit -5 page=1 default
+--> if we want to change using query paramas we can
