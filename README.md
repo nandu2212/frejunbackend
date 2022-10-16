@@ -6,7 +6,6 @@ postaldetails--> get all the posts
 findingletterwitha--> writes the all words stat with a or A
        --->function info utility->findingarray
        --> route info get method post/array route
-
 modification -->updating the db with help of id
             --> functions info  used by utility(updatingdb);
             --> route info (change/update)
