@@ -14,3 +14,5 @@ pagination --> pagination on limit -5 page=1 default
 --> if we want to change using query paramas we can
 images folder 
 images of snaps of postman sql data
+images folder
+--> snaps of postman data sql datas
